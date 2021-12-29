@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
 	private int[] numbers = new int[12]; // final albo malymi
 
-	public int total = -1;
+	private int total = -1;
 
 	public void countIn(int in) {
 		if (!isFull())
