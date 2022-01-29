@@ -4,7 +4,6 @@ public class IntArrayStack implements IntStack {
 
     final static int CAPACITY = 12;
     final static int EMPTY = -1;
-    final static int DEFAULT = -1;
 
     private final int[] numbers = new int[CAPACITY];
 
@@ -33,14 +32,14 @@ public class IntArrayStack implements IntStack {
     @Override
     public int top() {
         if (isEmpty())
-            return DEFAULT;
+            return IntStack.DEFAULT;
         return numbers[total];
     }
 
     @Override
     public int pop() {
         if (isEmpty())
-            return DEFAULT;
+            return IntStack.DEFAULT;
         return numbers[total--];
     }
 

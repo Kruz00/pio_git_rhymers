@@ -4,7 +4,6 @@ public class IntLinkedList implements IntStack {
 
 	private Node last;
 	int i;
-	final static int DEFAULT = -1;
 
 	@Override
 	public void push(int i) {
